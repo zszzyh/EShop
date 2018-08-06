@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--注解驱动-->
+    <mvc:annotation-driven>
+        <mvc:message-converters register-defaults="true">
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <property name="supportedMediaTypes" value = "text/plain;charset=UTF-8" />
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+    <!--注解扫描-->
+    <context:component-scan base-package="com.hang"/>
+    <!--默认的servlet-->
+    <mvc:default-servlet-handler/>
+
+    <!-- 开启AOP注解扫描 -->
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+    <!--前缀后缀拼接bean-->
+    <!--配置资源地址 /WEB-INF/xx.jsp-->
+
+
+    <!-- 处理异常-->
+    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <property name="exceptionMappings">
+            <props>
+                <prop key="java.lang.Exception">error</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- 注册拦截器 -->
+    <!--<mvc:interceptors>-->
+        <!--&lt;!&ndash; 登录检查拦截器&ndash;&gt;-->
+        <!--<mvc:interceptor>-->
+            <!--<mvc:mapping path="/**"/>-->
+            <!--<mvc:exclude-mapping path="/admin/login"/>-->
+            <!--<mvc:exclude-mapping path="/login.jsp"/>-->
+            <!--&lt;!&ndash;<mvc:exclude-mapping path="/login/login.do"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<mvc:exclude-mapping path="/login/createImage.do"/>&ndash;&gt;-->
+            <!--<bean class="com.hang.interceptor.LoginInterceptor"/>-->
+        <!--</mvc:interceptor>-->
+
+         <!--&lt;!&ndash;判断当前模块拦截器 &ndash;&gt;-->
+        <!--<mvc:interceptor>-->
+            <!--<mvc:mapping path="/**"/>-->
+            <!--<bean class="com.hang.interceptor.CurrentModuleInterceptor"/>-->
+        <!--</mvc:intercept or>-->
+        <!--&lt;!&ndash; 权限检查拦截器-->
+        <!--<mvc:interceptor>-->
+            <!--<mvc:mapping path="/**"/>-->
+            <!--<mvc:exclude-mapping path="/login/*"/>-->
+            <!--<bean class="com.lanou.interceptor.CheckModuleInterceptor"/>-->
+        <!--</mvc:interceptor>&ndash;&gt;-->
+    <!--</mvc:interceptors>-->
+
+    <context:property-placeholder location="classpath:db.properties"/>
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="jspViewResolver">
+        <!--地址前缀-->
+        <property name="prefix" value="/WEB-INF/jsps/"/>
+        <!--地址后缀-->
+        <property name="suffix" value=".jsp"/>
+        <!--<property name="suffix" value=".html"/>-->
+    </bean>
+
+
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="${db.driver}"/>
+        <property name="jdbcUrl" value="${db.url}"/>
+        <property name="user" value="${db.username}"/>
+        <property name="password" value="${db.password}"/>
+        <property name="maxIdleTime" value="${db.maxIdleTime}"/>
+        <property name="maxPoolSize" value="${db.maxPoolSize}"/>
+        <property name="minPoolSize" value="${db.minPoolSize}"/>
+        <property name="acquireRetryDelay" value="${db.acquireRetryDelay}"/>
+        <property name="acquireIncrement" value="${db.acquireIncrement}"/>
+        <property name="acquireRetryAttempts" value="${db.acquireRetryAttempts}"/>
+        <property name="breakAfterAcquireFailure" value="${db.breakAfterAcquireFailure}"/>
+    </bean>
+
+    <bean id="sqlSessionFactory"
+          class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.hang"/>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+    </bean>
+</beans>
