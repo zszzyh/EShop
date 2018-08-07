@@ -1,17 +1,17 @@
 package com.hang.dao;
 
-import com.hang.bean.bean.tb_content_category;
+import com.hang.bean.Tb_Content_Category;
 
-public interface tb_content_categoryMapper {
+public interface Tb_Content_CategoryMapper {
     int deleteByPrimaryKey(Long id);
 
-    int insert(tb_content_category record);
+    int insert(Tb_Content_Category record);
 
-    int insertSelective(tb_content_category record);
+    int insertSelective(Tb_Content_Category record);
 
-    tb_content_category selectByPrimaryKey(Long id);
+    Tb_Content_Category selectByPrimaryKey(Long id);
 
-    int updateByPrimaryKeySelective(tb_content_category record);
+    int updateByPrimaryKeySelective(Tb_Content_Category record);
 
-    int updateByPrimaryKey(tb_content_category record);
+    int updateByPrimaryKey(Tb_Content_Category record);
 }

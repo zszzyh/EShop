@@ -1,17 +1,17 @@
 package com.hang.dao;
 
-import com.hang.bean.bean.tb_order_item;
+import com.hang.bean.Tb_Order_Item;
 
-public interface tb_order_itemMapper {
+public interface Tb_Order_ItemMapper {
     int deleteByPrimaryKey(String id);
 
-    int insert(tb_order_item record);
+    int insert(Tb_Order_Item record);
 
-    int insertSelective(tb_order_item record);
+    int insertSelective(Tb_Order_Item record);
 
-    tb_order_item selectByPrimaryKey(String id);
+    Tb_Order_Item selectByPrimaryKey(String id);
 
-    int updateByPrimaryKeySelective(tb_order_item record);
+    int updateByPrimaryKeySelective(Tb_Order_Item record);
 
-    int updateByPrimaryKey(tb_order_item record);
+    int updateByPrimaryKey(Tb_Order_Item record);
 }

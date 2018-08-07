@@ -1,17 +1,24 @@
 package com.hang.dao;
 
-import com.hang.bean.bean.tb_item;
+import com.hang.bean.Tb_Item;
+import org.springframework.stereotype.Repository;
 
-public interface tb_itemMapper {
+import java.util.List;
+
+@Repository
+public interface Tb_ItemMapper {
     int deleteByPrimaryKey(Long id);
 
-    int insert(tb_item record);
+    int insert(Tb_Item record);
 
-    int insertSelective(tb_item record);
+    int insertSelective(Tb_Item record);
 
-    tb_item selectByPrimaryKey(Long id);
+    Tb_Item selectByPrimaryKey(Long id);
 
-    int updateByPrimaryKeySelective(tb_item record);
+    int updateByPrimaryKeySelective(Tb_Item record);
 
-    int updateByPrimaryKey(tb_item record);
+    int updateByPrimaryKey(Tb_Item record);
+
+    //查tb_item表全部数据
+    List<Tb_Item> findAll();
 }

@@ -1,0 +1,218 @@
+2018-08-07 15:28:06,902 INFO  (FrameworkServlet.java:494) - FrameworkServlet 'SpringServlet': initialization started
+2018-08-07 15:28:06,921 INFO  (AbstractApplicationContext.java:590) - Refreshing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 15:28:06 CST 2018]; root of context hierarchy
+2018-08-07 15:28:06,948 INFO  (XmlBeanDefinitionReader.java:316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-08-07 15:28:07,553 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_admin_info/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_Admin_InfoController.login(javax.servlet.http.HttpSession,com.hang.bean.Tb_Admin_Info)
+2018-08-07 15:28:07,555 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_item/findAll],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_ItemController.findAll()
+2018-08-07 15:28:07,737 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 15:28:06 CST 2018]; root of context hierarchy
+2018-08-07 15:28:07,796 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 15:28:06 CST 2018]; root of context hierarchy
+2018-08-07 15:28:08,473 INFO  (AbstractUrlHandlerMapping.java:373) - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-08-07 15:28:08,556 INFO  (FrameworkServlet.java:509) - FrameworkServlet 'SpringServlet': initialization completed in 1646 ms
+2018-08-07 15:32:30,126 INFO  (AbstractApplicationContext.java:993) - Closing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 15:28:06 CST 2018]; root of context hierarchy
+2018-08-07 15:32:37,738 INFO  (FrameworkServlet.java:494) - FrameworkServlet 'SpringServlet': initialization started
+2018-08-07 15:32:37,764 INFO  (AbstractApplicationContext.java:590) - Refreshing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 15:32:37 CST 2018]; root of context hierarchy
+2018-08-07 15:32:37,791 INFO  (XmlBeanDefinitionReader.java:316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-08-07 15:32:38,456 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_admin_info/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_Admin_InfoController.login(javax.servlet.http.HttpSession,com.hang.bean.Tb_Admin_Info)
+2018-08-07 15:32:38,459 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_item/findAll],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_ItemController.findAll()
+2018-08-07 15:32:38,709 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 15:32:37 CST 2018]; root of context hierarchy
+2018-08-07 15:32:38,765 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 15:32:37 CST 2018]; root of context hierarchy
+2018-08-07 15:32:39,451 INFO  (AbstractUrlHandlerMapping.java:373) - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-08-07 15:32:39,526 INFO  (FrameworkServlet.java:509) - FrameworkServlet 'SpringServlet': initialization completed in 1780 ms
+2018-08-07 15:32:49,358 DEBUG (BaseJdbcLogger.java:159) - ==>  Preparing: select * from tb_admin_info where admin_code = ? and password = ? 
+2018-08-07 15:32:49,438 DEBUG (BaseJdbcLogger.java:159) - ==> Parameters: 1(String), e10adc3949ba59abbe56e057f20f883e(String)
+2018-08-07 15:32:49,470 DEBUG (BaseJdbcLogger.java:159) - <==      Total: 1
+2018-08-07 15:34:03,513 INFO  (AbstractApplicationContext.java:993) - Closing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 15:32:37 CST 2018]; root of context hierarchy
+2018-08-07 15:34:06,833 INFO  (FrameworkServlet.java:494) - FrameworkServlet 'SpringServlet': initialization started
+2018-08-07 15:34:06,851 INFO  (AbstractApplicationContext.java:590) - Refreshing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 15:34:06 CST 2018]; root of context hierarchy
+2018-08-07 15:34:06,877 INFO  (XmlBeanDefinitionReader.java:316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-08-07 15:34:07,460 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_admin_info/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_Admin_InfoController.login(javax.servlet.http.HttpSession,com.hang.bean.Tb_Admin_Info)
+2018-08-07 15:34:07,465 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_item/findAll],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_ItemController.findAll()
+2018-08-07 15:34:07,672 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 15:34:06 CST 2018]; root of context hierarchy
+2018-08-07 15:34:07,712 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 15:34:06 CST 2018]; root of context hierarchy
+2018-08-07 15:34:08,210 INFO  (AbstractUrlHandlerMapping.java:373) - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-08-07 15:34:08,272 INFO  (FrameworkServlet.java:509) - FrameworkServlet 'SpringServlet': initialization completed in 1433 ms
+2018-08-07 15:40:34,706 INFO  (AbstractApplicationContext.java:993) - Closing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 15:34:06 CST 2018]; root of context hierarchy
+2018-08-07 15:40:38,267 INFO  (FrameworkServlet.java:494) - FrameworkServlet 'SpringServlet': initialization started
+2018-08-07 15:40:38,285 INFO  (AbstractApplicationContext.java:590) - Refreshing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 15:40:38 CST 2018]; root of context hierarchy
+2018-08-07 15:40:38,317 INFO  (XmlBeanDefinitionReader.java:316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-08-07 15:40:38,809 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_admin_info/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_Admin_InfoController.login(javax.servlet.http.HttpSession,com.hang.bean.Tb_Admin_Info)
+2018-08-07 15:40:38,811 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_item/findAll],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_ItemController.findAll()
+2018-08-07 15:40:39,040 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 15:40:38 CST 2018]; root of context hierarchy
+2018-08-07 15:40:39,116 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 15:40:38 CST 2018]; root of context hierarchy
+2018-08-07 15:40:39,695 INFO  (AbstractUrlHandlerMapping.java:373) - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-08-07 15:40:39,751 INFO  (FrameworkServlet.java:509) - FrameworkServlet 'SpringServlet': initialization completed in 1478 ms
+2018-08-07 15:57:44,209 INFO  (AbstractApplicationContext.java:993) - Closing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 15:40:38 CST 2018]; root of context hierarchy
+2018-08-07 15:57:51,913 INFO  (FrameworkServlet.java:494) - FrameworkServlet 'SpringServlet': initialization started
+2018-08-07 15:57:51,931 INFO  (AbstractApplicationContext.java:590) - Refreshing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 15:57:51 CST 2018]; root of context hierarchy
+2018-08-07 15:57:51,953 INFO  (XmlBeanDefinitionReader.java:316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-08-07 15:57:52,621 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_admin_info/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_Admin_InfoController.login(javax.servlet.http.HttpSession,com.hang.bean.Tb_Admin_Info)
+2018-08-07 15:57:52,623 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_item/findAll],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_ItemController.findAll()
+2018-08-07 15:57:52,853 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 15:57:51 CST 2018]; root of context hierarchy
+2018-08-07 15:57:52,906 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 15:57:51 CST 2018]; root of context hierarchy
+2018-08-07 15:57:53,620 INFO  (AbstractUrlHandlerMapping.java:373) - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-08-07 15:57:53,706 INFO  (FrameworkServlet.java:509) - FrameworkServlet 'SpringServlet': initialization completed in 1785 ms
+2018-08-07 15:58:02,711 DEBUG (BaseJdbcLogger.java:159) - ==>  Preparing: select * from tb_admin_info where admin_code = ? and password = ? 
+2018-08-07 15:58:02,777 DEBUG (BaseJdbcLogger.java:159) - ==> Parameters: 1(String), e10adc3949ba59abbe56e057f20f883e(String)
+2018-08-07 15:58:02,819 DEBUG (BaseJdbcLogger.java:159) - <==      Total: 1
+2018-08-07 15:58:37,441 INFO  (AbstractApplicationContext.java:993) - Closing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 15:57:51 CST 2018]; root of context hierarchy
+2018-08-07 15:58:53,470 INFO  (FrameworkServlet.java:494) - FrameworkServlet 'SpringServlet': initialization started
+2018-08-07 15:58:53,486 INFO  (AbstractApplicationContext.java:590) - Refreshing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 15:58:53 CST 2018]; root of context hierarchy
+2018-08-07 15:58:53,515 INFO  (XmlBeanDefinitionReader.java:316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-08-07 15:58:54,102 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_admin_info/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_Admin_InfoController.login(javax.servlet.http.HttpSession,com.hang.bean.Tb_Admin_Info)
+2018-08-07 15:58:54,104 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_item/findAll],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_ItemController.findAll()
+2018-08-07 15:58:54,293 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 15:58:53 CST 2018]; root of context hierarchy
+2018-08-07 15:58:54,328 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 15:58:53 CST 2018]; root of context hierarchy
+2018-08-07 15:58:54,823 INFO  (AbstractUrlHandlerMapping.java:373) - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-08-07 15:58:54,882 INFO  (FrameworkServlet.java:509) - FrameworkServlet 'SpringServlet': initialization completed in 1406 ms
+2018-08-07 16:03:12,307 INFO  (AbstractApplicationContext.java:993) - Closing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 15:58:53 CST 2018]; root of context hierarchy
+2018-08-07 16:03:16,384 INFO  (FrameworkServlet.java:494) - FrameworkServlet 'SpringServlet': initialization started
+2018-08-07 16:03:16,412 INFO  (AbstractApplicationContext.java:590) - Refreshing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:03:16 CST 2018]; root of context hierarchy
+2018-08-07 16:03:16,443 INFO  (XmlBeanDefinitionReader.java:316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-08-07 16:03:16,953 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_admin_info/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_Admin_InfoController.login(javax.servlet.http.HttpSession,com.hang.bean.Tb_Admin_Info)
+2018-08-07 16:03:16,955 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_item/findAll],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_ItemController.findAll()
+2018-08-07 16:03:17,124 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:03:16 CST 2018]; root of context hierarchy
+2018-08-07 16:03:17,168 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:03:16 CST 2018]; root of context hierarchy
+2018-08-07 16:03:17,732 INFO  (AbstractUrlHandlerMapping.java:373) - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-08-07 16:03:17,791 INFO  (FrameworkServlet.java:509) - FrameworkServlet 'SpringServlet': initialization completed in 1394 ms
+2018-08-07 16:07:50,709 INFO  (AbstractApplicationContext.java:993) - Closing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:03:16 CST 2018]; root of context hierarchy
+2018-08-07 16:08:42,158 INFO  (FrameworkServlet.java:494) - FrameworkServlet 'SpringServlet': initialization started
+2018-08-07 16:08:42,179 INFO  (AbstractApplicationContext.java:590) - Refreshing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:08:42 CST 2018]; root of context hierarchy
+2018-08-07 16:08:42,204 INFO  (XmlBeanDefinitionReader.java:316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-08-07 16:08:42,829 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_admin_info/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_Admin_InfoController.login(javax.servlet.http.HttpSession,com.hang.bean.Tb_Admin_Info)
+2018-08-07 16:08:42,832 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_item/findAll],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_ItemController.findAll()
+2018-08-07 16:08:43,065 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:08:42 CST 2018]; root of context hierarchy
+2018-08-07 16:08:43,119 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:08:42 CST 2018]; root of context hierarchy
+2018-08-07 16:08:43,851 INFO  (AbstractUrlHandlerMapping.java:373) - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-08-07 16:08:43,913 INFO  (FrameworkServlet.java:509) - FrameworkServlet 'SpringServlet': initialization completed in 1748 ms
+2018-08-07 16:08:50,084 DEBUG (BaseJdbcLogger.java:159) - ==>  Preparing: select * from tb_admin_info where admin_code = ? and password = ? 
+2018-08-07 16:08:50,142 DEBUG (BaseJdbcLogger.java:159) - ==> Parameters: 1(String), e10adc3949ba59abbe56e057f20f883e(String)
+2018-08-07 16:08:50,178 DEBUG (BaseJdbcLogger.java:159) - <==      Total: 1
+2018-08-07 16:10:19,345 INFO  (AbstractApplicationContext.java:993) - Closing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:08:42 CST 2018]; root of context hierarchy
+2018-08-07 16:10:28,268 INFO  (FrameworkServlet.java:494) - FrameworkServlet 'SpringServlet': initialization started
+2018-08-07 16:10:28,288 INFO  (AbstractApplicationContext.java:590) - Refreshing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:10:28 CST 2018]; root of context hierarchy
+2018-08-07 16:10:28,315 INFO  (XmlBeanDefinitionReader.java:316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-08-07 16:10:28,846 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_admin_info/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_Admin_InfoController.login(javax.servlet.http.HttpSession,com.hang.bean.Tb_Admin_Info)
+2018-08-07 16:10:28,848 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_item/findAll],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_ItemController.findAll()
+2018-08-07 16:10:29,012 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:10:28 CST 2018]; root of context hierarchy
+2018-08-07 16:10:29,052 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:10:28 CST 2018]; root of context hierarchy
+2018-08-07 16:10:29,516 INFO  (AbstractUrlHandlerMapping.java:373) - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-08-07 16:10:29,567 INFO  (FrameworkServlet.java:509) - FrameworkServlet 'SpringServlet': initialization completed in 1293 ms
+2018-08-07 16:15:34,090 INFO  (AbstractApplicationContext.java:993) - Closing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:10:28 CST 2018]; root of context hierarchy
+2018-08-07 16:15:37,488 INFO  (FrameworkServlet.java:494) - FrameworkServlet 'SpringServlet': initialization started
+2018-08-07 16:15:37,508 INFO  (AbstractApplicationContext.java:590) - Refreshing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:15:37 CST 2018]; root of context hierarchy
+2018-08-07 16:15:37,535 INFO  (XmlBeanDefinitionReader.java:316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-08-07 16:15:38,080 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_admin_info/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_Admin_InfoController.login(javax.servlet.http.HttpSession,com.hang.bean.Tb_Admin_Info)
+2018-08-07 16:15:38,082 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_item/findAll],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_ItemController.findAll()
+2018-08-07 16:15:38,312 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:15:37 CST 2018]; root of context hierarchy
+2018-08-07 16:15:38,351 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:15:37 CST 2018]; root of context hierarchy
+2018-08-07 16:15:38,832 INFO  (AbstractUrlHandlerMapping.java:373) - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-08-07 16:15:38,883 INFO  (FrameworkServlet.java:509) - FrameworkServlet 'SpringServlet': initialization completed in 1386 ms
+2018-08-07 16:15:40,783 DEBUG (BaseJdbcLogger.java:159) - ==>  Preparing: select * from tb_item 
+2018-08-07 16:15:40,822 DEBUG (BaseJdbcLogger.java:159) - ==> Parameters: 
+2018-08-07 16:15:41,118 DEBUG (BaseJdbcLogger.java:159) - <==      Total: 3096
+2018-08-07 16:15:55,947 DEBUG (BaseJdbcLogger.java:159) - ==>  Preparing: select * from tb_item 
+2018-08-07 16:15:55,949 DEBUG (BaseJdbcLogger.java:159) - ==> Parameters: 
+2018-08-07 16:15:56,086 DEBUG (BaseJdbcLogger.java:159) - <==      Total: 3096
+2018-08-07 16:17:12,037 DEBUG (BaseJdbcLogger.java:159) - ==>  Preparing: select * from tb_item 
+2018-08-07 16:17:12,037 DEBUG (BaseJdbcLogger.java:159) - ==> Parameters: 
+2018-08-07 16:17:12,114 DEBUG (BaseJdbcLogger.java:159) - <==      Total: 3096
+2018-08-07 16:18:15,908 INFO  (AbstractApplicationContext.java:993) - Closing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:15:37 CST 2018]; root of context hierarchy
+2018-08-07 16:18:30,071 INFO  (FrameworkServlet.java:494) - FrameworkServlet 'SpringServlet': initialization started
+2018-08-07 16:18:30,095 INFO  (AbstractApplicationContext.java:590) - Refreshing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:18:30 CST 2018]; root of context hierarchy
+2018-08-07 16:18:30,162 INFO  (XmlBeanDefinitionReader.java:316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-08-07 16:18:30,600 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_admin_info/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_Admin_InfoController.login(javax.servlet.http.HttpSession,com.hang.bean.Tb_Admin_Info)
+2018-08-07 16:18:30,601 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_item/findAll],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_ItemController.findAll()
+2018-08-07 16:18:30,770 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:18:30 CST 2018]; root of context hierarchy
+2018-08-07 16:18:30,812 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:18:30 CST 2018]; root of context hierarchy
+2018-08-07 16:18:31,344 INFO  (AbstractUrlHandlerMapping.java:373) - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-08-07 16:18:31,397 INFO  (FrameworkServlet.java:509) - FrameworkServlet 'SpringServlet': initialization completed in 1320 ms
+2018-08-07 16:18:32,573 DEBUG (BaseJdbcLogger.java:159) - ==>  Preparing: select * from tb_item 
+2018-08-07 16:18:32,602 DEBUG (BaseJdbcLogger.java:159) - ==> Parameters: 
+2018-08-07 16:18:32,837 DEBUG (BaseJdbcLogger.java:159) - <==      Total: 3096
+2018-08-07 16:19:36,329 DEBUG (BaseJdbcLogger.java:159) - ==>  Preparing: select * from tb_item 
+2018-08-07 16:19:36,330 DEBUG (BaseJdbcLogger.java:159) - ==> Parameters: 
+2018-08-07 16:19:36,488 DEBUG (BaseJdbcLogger.java:159) - <==      Total: 3096
+2018-08-07 16:23:47,501 INFO  (AbstractApplicationContext.java:993) - Closing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:18:30 CST 2018]; root of context hierarchy
+2018-08-07 16:23:51,001 INFO  (FrameworkServlet.java:494) - FrameworkServlet 'SpringServlet': initialization started
+2018-08-07 16:23:51,020 INFO  (AbstractApplicationContext.java:590) - Refreshing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:23:51 CST 2018]; root of context hierarchy
+2018-08-07 16:23:51,044 INFO  (XmlBeanDefinitionReader.java:316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-08-07 16:23:51,426 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_admin_info/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_Admin_InfoController.login(javax.servlet.http.HttpSession,com.hang.bean.Tb_Admin_Info)
+2018-08-07 16:23:51,428 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_item/findAll],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_ItemController.findAll()
+2018-08-07 16:23:51,636 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:23:51 CST 2018]; root of context hierarchy
+2018-08-07 16:23:51,672 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:23:51 CST 2018]; root of context hierarchy
+2018-08-07 16:23:52,155 INFO  (AbstractUrlHandlerMapping.java:373) - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-08-07 16:23:52,206 INFO  (FrameworkServlet.java:509) - FrameworkServlet 'SpringServlet': initialization completed in 1198 ms
+2018-08-07 16:23:56,859 DEBUG (BaseJdbcLogger.java:159) - ==>  Preparing: select * from tb_item 
+2018-08-07 16:23:56,874 DEBUG (BaseJdbcLogger.java:159) - ==> Parameters: 
+2018-08-07 16:23:57,063 DEBUG (BaseJdbcLogger.java:159) - <==      Total: 3096
+2018-08-07 16:24:02,264 DEBUG (BaseJdbcLogger.java:159) - ==>  Preparing: select * from tb_item 
+2018-08-07 16:24:02,265 DEBUG (BaseJdbcLogger.java:159) - ==> Parameters: 
+2018-08-07 16:24:02,402 DEBUG (BaseJdbcLogger.java:159) - <==      Total: 3096
+2018-08-07 16:25:40,288 INFO  (AbstractApplicationContext.java:993) - Closing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:23:51 CST 2018]; root of context hierarchy
+2018-08-07 16:25:47,987 INFO  (FrameworkServlet.java:494) - FrameworkServlet 'SpringServlet': initialization started
+2018-08-07 16:25:48,002 INFO  (AbstractApplicationContext.java:590) - Refreshing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:25:48 CST 2018]; root of context hierarchy
+2018-08-07 16:25:48,022 INFO  (XmlBeanDefinitionReader.java:316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-08-07 16:25:48,430 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_admin_info/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_Admin_InfoController.login(javax.servlet.http.HttpSession,com.hang.bean.Tb_Admin_Info)
+2018-08-07 16:25:48,431 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_item/findAll],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_ItemController.findAll()
+2018-08-07 16:25:48,579 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:25:48 CST 2018]; root of context hierarchy
+2018-08-07 16:25:48,610 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:25:48 CST 2018]; root of context hierarchy
+2018-08-07 16:25:49,057 INFO  (AbstractUrlHandlerMapping.java:373) - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-08-07 16:25:49,113 INFO  (FrameworkServlet.java:509) - FrameworkServlet 'SpringServlet': initialization completed in 1121 ms
+2018-08-07 16:27:23,165 DEBUG (BaseJdbcLogger.java:159) - ==>  Preparing: select * from tb_item 
+2018-08-07 16:27:23,185 DEBUG (BaseJdbcLogger.java:159) - ==> Parameters: 
+2018-08-07 16:27:23,419 DEBUG (BaseJdbcLogger.java:159) - <==      Total: 3096
+2018-08-07 19:16:38,042 INFO  (AbstractApplicationContext.java:993) - Closing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 16:25:48 CST 2018]; root of context hierarchy
+2018-08-07 19:16:47,233 INFO  (FrameworkServlet.java:494) - FrameworkServlet 'SpringServlet': initialization started
+2018-08-07 19:16:47,259 INFO  (AbstractApplicationContext.java:590) - Refreshing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 19:16:47 CST 2018]; root of context hierarchy
+2018-08-07 19:16:47,299 INFO  (XmlBeanDefinitionReader.java:316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-08-07 19:16:47,975 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_admin_info/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_Admin_InfoController.login(javax.servlet.http.HttpSession,com.hang.bean.Tb_Admin_Info)
+2018-08-07 19:16:47,978 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_item/findAll],methods=[GET]}" onto public com.hang.bean.BaseEasyBean com.hang.controller.Tb_ItemController.findAll()
+2018-08-07 19:16:48,196 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 19:16:47 CST 2018]; root of context hierarchy
+2018-08-07 19:16:48,265 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 19:16:47 CST 2018]; root of context hierarchy
+2018-08-07 19:16:49,021 INFO  (AbstractUrlHandlerMapping.java:373) - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-08-07 19:16:49,092 INFO  (FrameworkServlet.java:509) - FrameworkServlet 'SpringServlet': initialization completed in 1848 ms
+2018-08-07 19:17:07,880 DEBUG (BaseJdbcLogger.java:159) - ==>  Preparing: select * from tb_admin_info where admin_code = ? and password = ? 
+2018-08-07 19:17:07,942 DEBUG (BaseJdbcLogger.java:159) - ==> Parameters: 1(String), e10adc3949ba59abbe56e057f20f883e(String)
+2018-08-07 19:17:08,014 DEBUG (BaseJdbcLogger.java:159) - <==      Total: 1
+2018-08-07 19:18:36,122 INFO  (AbstractApplicationContext.java:993) - Closing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 19:16:47 CST 2018]; root of context hierarchy
+2018-08-07 19:18:45,523 INFO  (FrameworkServlet.java:494) - FrameworkServlet 'SpringServlet': initialization started
+2018-08-07 19:18:45,544 INFO  (AbstractApplicationContext.java:590) - Refreshing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 19:18:45 CST 2018]; root of context hierarchy
+2018-08-07 19:18:45,570 INFO  (XmlBeanDefinitionReader.java:316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-08-07 19:18:46,275 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_admin_info/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_Admin_InfoController.login(javax.servlet.http.HttpSession,com.hang.bean.Tb_Admin_Info)
+2018-08-07 19:18:46,280 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_item/findAll],methods=[GET]}" onto public com.hang.bean.BaseEasyBean com.hang.controller.Tb_ItemController.findAll()
+2018-08-07 19:18:46,545 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 19:18:45 CST 2018]; root of context hierarchy
+2018-08-07 19:18:46,594 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 19:18:45 CST 2018]; root of context hierarchy
+2018-08-07 19:18:47,148 INFO  (AbstractUrlHandlerMapping.java:373) - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-08-07 19:18:47,200 INFO  (FrameworkServlet.java:509) - FrameworkServlet 'SpringServlet': initialization completed in 1670 ms
+2018-08-07 19:19:13,065 INFO  (AbstractApplicationContext.java:993) - Closing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 19:18:45 CST 2018]; root of context hierarchy
+2018-08-07 19:19:22,608 INFO  (FrameworkServlet.java:494) - FrameworkServlet 'SpringServlet': initialization started
+2018-08-07 19:19:22,632 INFO  (AbstractApplicationContext.java:590) - Refreshing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 19:19:22 CST 2018]; root of context hierarchy
+2018-08-07 19:19:22,663 INFO  (XmlBeanDefinitionReader.java:316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-08-07 19:19:23,166 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_admin_info/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_Admin_InfoController.login(javax.servlet.http.HttpSession,com.hang.bean.Tb_Admin_Info)
+2018-08-07 19:19:23,168 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_item/findAll],methods=[GET]}" onto public com.hang.bean.BaseEasyBean com.hang.controller.Tb_ItemController.findAll()
+2018-08-07 19:19:23,339 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 19:19:22 CST 2018]; root of context hierarchy
+2018-08-07 19:19:23,412 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 19:19:22 CST 2018]; root of context hierarchy
+2018-08-07 19:19:23,945 INFO  (AbstractUrlHandlerMapping.java:373) - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-08-07 19:19:24,009 INFO  (FrameworkServlet.java:509) - FrameworkServlet 'SpringServlet': initialization completed in 1394 ms
+2018-08-07 19:21:00,728 INFO  (AbstractApplicationContext.java:993) - Closing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 19:19:22 CST 2018]; root of context hierarchy
+2018-08-07 19:21:12,228 INFO  (FrameworkServlet.java:494) - FrameworkServlet 'SpringServlet': initialization started
+2018-08-07 19:21:12,251 INFO  (AbstractApplicationContext.java:590) - Refreshing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 19:21:12 CST 2018]; root of context hierarchy
+2018-08-07 19:21:12,289 INFO  (XmlBeanDefinitionReader.java:316) - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-08-07 19:21:12,800 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_admin_info/login],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.hang.controller.Tb_Admin_InfoController.login(javax.servlet.http.HttpSession,com.hang.bean.Tb_Admin_Info)
+2018-08-07 19:21:12,803 INFO  (AbstractHandlerMethodMapping.java:547) - Mapped "{[/tb_item/findAll],methods=[GET]}" onto public com.hang.bean.BaseEasyBean com.hang.controller.Tb_ItemController.findAll()
+2018-08-07 19:21:12,952 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 19:21:12 CST 2018]; root of context hierarchy
+2018-08-07 19:21:13,006 INFO  (RequestMappingHandlerAdapter.java:574) - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 19:21:12 CST 2018]; root of context hierarchy
+2018-08-07 19:21:13,468 INFO  (AbstractUrlHandlerMapping.java:373) - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2018-08-07 19:21:13,522 INFO  (FrameworkServlet.java:509) - FrameworkServlet 'SpringServlet': initialization completed in 1287 ms
+2018-08-07 19:21:16,457 DEBUG (BaseJdbcLogger.java:159) - ==>  Preparing: select * from tb_item 
+2018-08-07 19:21:16,482 DEBUG (BaseJdbcLogger.java:159) - ==> Parameters: 
+2018-08-07 19:21:16,764 DEBUG (BaseJdbcLogger.java:159) - <==      Total: 3096
+2018-08-07 19:21:27,445 DEBUG (BaseJdbcLogger.java:159) - ==>  Preparing: select * from tb_item 
+2018-08-07 19:21:27,448 DEBUG (BaseJdbcLogger.java:159) - ==> Parameters: 
+2018-08-07 19:21:27,592 DEBUG (BaseJdbcLogger.java:159) - <==      Total: 3096
+2018-08-07 19:21:56,192 DEBUG (BaseJdbcLogger.java:159) - ==>  Preparing: select * from tb_item 
+2018-08-07 19:21:56,193 DEBUG (BaseJdbcLogger.java:159) - ==> Parameters: 
+2018-08-07 19:21:56,252 DEBUG (BaseJdbcLogger.java:159) - <==      Total: 3096
+2018-08-07 19:22:46,835 DEBUG (BaseJdbcLogger.java:159) - ==>  Preparing: select * from tb_item 
+2018-08-07 19:22:46,841 DEBUG (BaseJdbcLogger.java:159) - ==> Parameters: 
+2018-08-07 19:22:46,914 DEBUG (BaseJdbcLogger.java:159) - <==      Total: 3096
+2018-08-07 19:27:26,851 INFO  (AbstractApplicationContext.java:993) - Closing WebApplicationContext for namespace 'SpringServlet-servlet': startup date [Tue Aug 07 19:21:12 CST 2018]; root of context hierarchy

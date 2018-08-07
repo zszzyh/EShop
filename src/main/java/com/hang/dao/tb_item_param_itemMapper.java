@@ -1,19 +1,19 @@
 package com.hang.dao;
 
-import com.hang.bean.bean.tb_item_param_item;
+import com.hang.bean.Tb_Item_Param_Item;
 
-public interface tb_item_param_itemMapper {
+public interface Tb_Item_Param_ItemMapper {
     int deleteByPrimaryKey(Long id);
 
-    int insert(tb_item_param_item record);
+    int insert(Tb_Item_Param_Item record);
 
-    int insertSelective(tb_item_param_item record);
+    int insertSelective(Tb_Item_Param_Item record);
 
-    tb_item_param_item selectByPrimaryKey(Long id);
+    Tb_Item_Param_Item selectByPrimaryKey(Long id);
 
-    int updateByPrimaryKeySelective(tb_item_param_item record);
+    int updateByPrimaryKeySelective(Tb_Item_Param_Item record);
 
-    int updateByPrimaryKeyWithBLOBs(tb_item_param_item record);
+    int updateByPrimaryKeyWithBLOBs(Tb_Item_Param_Item record);
 
-    int updateByPrimaryKey(tb_item_param_item record);
+    int updateByPrimaryKey(Tb_Item_Param_Item record);
 }

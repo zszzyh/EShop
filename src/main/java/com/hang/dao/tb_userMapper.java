@@ -1,17 +1,17 @@
 package com.hang.dao;
 
-import com.hang.bean.bean.tb_user;
+import com.hang.bean.Tb_User;
 
-public interface tb_userMapper {
+public interface Tb_UserMapper {
     int deleteByPrimaryKey(Long id);
 
-    int insert(tb_user record);
+    int insert(Tb_User record);
 
-    int insertSelective(tb_user record);
+    int insertSelective(Tb_User record);
 
-    tb_user selectByPrimaryKey(Long id);
+    Tb_User selectByPrimaryKey(Long id);
 
-    int updateByPrimaryKeySelective(tb_user record);
+    int updateByPrimaryKeySelective(Tb_User record);
 
-    int updateByPrimaryKey(tb_user record);
+    int updateByPrimaryKey(Tb_User record);
 }

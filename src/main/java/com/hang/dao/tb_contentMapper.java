@@ -1,19 +1,19 @@
 package com.hang.dao;
 
-import com.hang.bean.bean.tb_content;
+import com.hang.bean.Tb_Content;
 
-public interface tb_contentMapper {
+public interface Tb_ContentMapper {
     int deleteByPrimaryKey(Long id);
 
-    int insert(tb_content record);
+    int insert(Tb_Content record);
 
-    int insertSelective(tb_content record);
+    int insertSelective(Tb_Content record);
 
-    tb_content selectByPrimaryKey(Long id);
+    Tb_Content selectByPrimaryKey(Long id);
 
-    int updateByPrimaryKeySelective(tb_content record);
+    int updateByPrimaryKeySelective(Tb_Content record);
 
-    int updateByPrimaryKeyWithBLOBs(tb_content record);
+    int updateByPrimaryKeyWithBLOBs(Tb_Content record);
 
-    int updateByPrimaryKey(tb_content record);
+    int updateByPrimaryKey(Tb_Content record);
 }

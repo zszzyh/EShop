@@ -1,17 +1,17 @@
 package com.hang.dao;
 
-import com.hang.bean.bean.tb_item_cat;
+import com.hang.bean.Tb_Item_Cat;
 
-public interface tb_item_catMapper {
+public interface Tb_Item_CatMapper {
     int deleteByPrimaryKey(Long id);
 
-    int insert(tb_item_cat record);
+    int insert(Tb_Item_Cat record);
 
-    int insertSelective(tb_item_cat record);
+    int insertSelective(Tb_Item_Cat record);
 
-    tb_item_cat selectByPrimaryKey(Long id);
+    Tb_Item_Cat selectByPrimaryKey(Long id);
 
-    int updateByPrimaryKeySelective(tb_item_cat record);
+    int updateByPrimaryKeySelective(Tb_Item_Cat record);
 
-    int updateByPrimaryKey(tb_item_cat record);
+    int updateByPrimaryKey(Tb_Item_Cat record);
 }
