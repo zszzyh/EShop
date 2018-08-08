@@ -5,6 +5,8 @@
        xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
+
+
     <!--注解驱动-->
     <mvc:annotation-driven>
         <mvc:message-converters register-defaults="true">
@@ -22,6 +24,7 @@
     <aop:aspectj-autoproxy proxy-target-class="true"/>
     <!--前缀后缀拼接bean-->
     <!--配置资源地址 /WEB-INF/xx.jsp-->
+
 
 
     <!-- 处理异常-->
@@ -54,9 +57,13 @@
         <!--<mvc:interceptor>-->
             <!--<mvc:mapping path="/**"/>-->
             <!--<mvc:exclude-mapping path="/login/*"/>-->
-            <!--<bean class="com.lanou.interceptor.CheckModuleInterceptor"/>-->
+            <!--<bean class="com.hang.interceptor.CheckModuleInterceptor"/>-->
         <!--</mvc:interceptor>&ndash;&gt;-->
     <!--</mvc:interceptors>-->
+
+
+
+
 
     <context:property-placeholder location="classpath:db.properties"/>
 
@@ -92,5 +99,11 @@
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.hang"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+    </bean>
+
+    <!-- 配置文件上传解析器 -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- 设置上传文件的最大尺寸为1MB -->
+        <property name="maxUploadSize" value="1048576"/>
     </bean>
 </beans>
