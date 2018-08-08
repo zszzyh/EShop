@@ -6,13 +6,13 @@
             </ul>
         </div>
         <div data-options="region:'center'" style="padding:5px">
-            <table class="easyui-datagrid" id="contentList" data-options="toolbar:contentListToolbar,singleSelect:false,collapsible:true,pagination:true,method:'get',pageSize:20,url:'/content/query/list',queryParams:{categoryId:0}">
+            <table class="easyui-datagrid" id="contentList" data-options="toolbar:contentListToolbar,singleSelect:false,collapsible:true,pagination:true,method:'get',pageSize:20,url:'/content/query/list',queryParams:{category_id:0}">
 		    <thead>
 		        <tr>
 		            <th data-options="field:'id',width:30">ID</th>
 		            <th data-options="field:'title',width:120">内容标题</th>
 		            <th data-options="field:'subTitle',width:100">内容子标题</th>
-		            <th data-options="field:'titleDesc',width:120">内容描述</th>
+		            <th data-options="field:'title_desc',width:120">内容描述</th>
 		            <th data-options="field:'url',width:60,align:'center',formatter:TAOTAO.formatUrl">内容连接</th>
 		            <th data-options="field:'pic',width:50,align:'center',formatter:TAOTAO.formatUrl">图片</th>
 		            <th data-options="field:'pic2',width:50,align:'center',formatter:TAOTAO.formatUrl">图片2</th>
@@ -32,7 +32,7 @@ $(function(){
 		onClick : function(node){
 			if(tree.tree("isLeaf",node.target)){
 				datagrid.datagrid('reload', {
-					categoryId :node.id
+					category_id :node.id
 		        });
 			}
 		}

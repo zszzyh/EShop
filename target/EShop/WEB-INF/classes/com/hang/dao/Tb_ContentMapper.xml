@@ -53,8 +53,8 @@
       sub_title, title_desc, url, 
       pic, pic2, created, 
       updated, content)
-    values (#{id,jdbcType=BIGINT}, #{categoryId,jdbcType=BIGINT}, #{title,jdbcType=VARCHAR}, 
-      #{subTitle,jdbcType=VARCHAR}, #{titleDesc,jdbcType=VARCHAR}, #{url,jdbcType=VARCHAR}, 
+    values (#{id,jdbcType=BIGINT}, #{category_id,jdbcType=BIGINT}, #{title,jdbcType=VARCHAR},
+      #{subTitle,jdbcType=VARCHAR}, #{title_desc,jdbcType=VARCHAR}, #{url,jdbcType=VARCHAR},
       #{pic,jdbcType=VARCHAR}, #{pic2,jdbcType=VARCHAR}, #{created,jdbcType=TIMESTAMP}, 
       #{updated,jdbcType=TIMESTAMP}, #{content,jdbcType=LONGVARCHAR})
   </insert>
@@ -64,7 +64,7 @@
       <if test="id != null" >
         id,
       </if>
-      <if test="categoryId != null" >
+      <if test="category_id != null" >
         category_id,
       </if>
       <if test="title != null" >
@@ -73,7 +73,7 @@
       <if test="subTitle != null" >
         sub_title,
       </if>
-      <if test="titleDesc != null" >
+      <if test="title_desc != null" >
         title_desc,
       </if>
       <if test="url != null" >
@@ -99,8 +99,8 @@
       <if test="id != null" >
         #{id,jdbcType=BIGINT},
       </if>
-      <if test="categoryId != null" >
-        #{categoryId,jdbcType=BIGINT},
+      <if test="category_id != null" >
+        #{category_id,jdbcType=BIGINT},
       </if>
       <if test="title != null" >
         #{title,jdbcType=VARCHAR},
@@ -108,8 +108,8 @@
       <if test="subTitle != null" >
         #{subTitle,jdbcType=VARCHAR},
       </if>
-      <if test="titleDesc != null" >
-        #{titleDesc,jdbcType=VARCHAR},
+      <if test="title_desc != null" >
+        #{title_desc,jdbcType=VARCHAR},
       </if>
       <if test="url != null" >
         #{url,jdbcType=VARCHAR},
@@ -134,8 +134,8 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.hang.bean.Tb_Content" >
     update tb_content
     <set >
-      <if test="categoryId != null" >
-        category_id = #{categoryId,jdbcType=BIGINT},
+      <if test="category_id != null" >
+        category_id = #{category_id,jdbcType=BIGINT},
       </if>
       <if test="title != null" >
         title = #{title,jdbcType=VARCHAR},
@@ -143,8 +143,8 @@
       <if test="subTitle != null" >
         sub_title = #{subTitle,jdbcType=VARCHAR},
       </if>
-      <if test="titleDesc != null" >
-        title_desc = #{titleDesc,jdbcType=VARCHAR},
+      <if test="title_desc != null" >
+        title_desc = #{title_desc,jdbcType=VARCHAR},
       </if>
       <if test="url != null" >
         url = #{url,jdbcType=VARCHAR},
@@ -169,10 +169,10 @@
   </update>
   <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.hang.bean.Tb_Content" >
     update tb_content
-    set category_id = #{categoryId,jdbcType=BIGINT},
+    set category_id = #{category_id,jdbcType=BIGINT},
       title = #{title,jdbcType=VARCHAR},
       sub_title = #{subTitle,jdbcType=VARCHAR},
-      title_desc = #{titleDesc,jdbcType=VARCHAR},
+      title_desc = #{title_desc,jdbcType=VARCHAR},
       url = #{url,jdbcType=VARCHAR},
       pic = #{pic,jdbcType=VARCHAR},
       pic2 = #{pic2,jdbcType=VARCHAR},
@@ -183,10 +183,10 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.hang.bean.Tb_Content" >
     update tb_content
-    set category_id = #{categoryId,jdbcType=BIGINT},
+    set category_id = #{category_id,jdbcType=BIGINT},
       title = #{title,jdbcType=VARCHAR},
       sub_title = #{subTitle,jdbcType=VARCHAR},
-      title_desc = #{titleDesc,jdbcType=VARCHAR},
+      title_desc = #{title_desc,jdbcType=VARCHAR},
       url = #{url,jdbcType=VARCHAR},
       pic = #{pic,jdbcType=VARCHAR},
       pic2 = #{pic2,jdbcType=VARCHAR},

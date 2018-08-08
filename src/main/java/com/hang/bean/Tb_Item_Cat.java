@@ -5,27 +5,41 @@ import java.util.Date;
 public class Tb_Item_Cat {
     private Long id;
 
-    private Long parentId;
+    @Override
+    public String toString() {
+        return "Tb_Item_Cat{" +
+                "id=" + id +
+                ", parent_id=" + parent_id +
+                ", name='" + name + '\'' +
+                ", status=" + status +
+                ", sort_order=" + sort_order +
+                ", is_parent=" + is_parent +
+                ", created=" + created +
+                ", updated=" + updated +
+                '}';
+    }
+
+    private Long parent_id;
 
     private String name;
 
     private Integer status;
 
-    private Integer sortOrder;
+    private Integer sort_order;
 
-    private Boolean isParent;
+    private Boolean is_parent;
 
     private Date created;
 
     private Date updated;
 
-    public Tb_Item_Cat(Long id, Long parentId, String name, Integer status, Integer sortOrder, Boolean isParent, Date created, Date updated) {
+    public Tb_Item_Cat(Long id, Long parent_id, String name, Integer status, Integer sort_order, Boolean is_parent, Date created, Date updated) {
         this.id = id;
-        this.parentId = parentId;
+        this.parent_id = parent_id;
         this.name = name;
         this.status = status;
-        this.sortOrder = sortOrder;
-        this.isParent = isParent;
+        this.sort_order = sort_order;
+        this.is_parent = is_parent;
         this.created = created;
         this.updated = updated;
     }
@@ -42,12 +56,12 @@ public class Tb_Item_Cat {
         this.id = id;
     }
 
-    public Long getParentId() {
-        return parentId;
+    public Long getParent_id() {
+        return parent_id;
     }
 
-    public void setParentId(Long parentId) {
-        this.parentId = parentId;
+    public void setParent_id(Long parent_id) {
+        this.parent_id = parent_id;
     }
 
     public String getName() {
@@ -66,20 +80,20 @@ public class Tb_Item_Cat {
         this.status = status;
     }
 
-    public Integer getSortOrder() {
-        return sortOrder;
+    public Integer getSort_order() {
+        return sort_order;
     }
 
-    public void setSortOrder(Integer sortOrder) {
-        this.sortOrder = sortOrder;
+    public void setSort_order(Integer sort_order) {
+        this.sort_order = sort_order;
     }
 
-    public Boolean getIsParent() {
-        return isParent;
+    public Boolean getIs_parent() {
+        return is_parent;
     }
 
-    public void setIsParent(Boolean isParent) {
-        this.isParent = isParent;
+    public void setIs_parent(Boolean is_parent) {
+        this.is_parent = is_parent;
     }
 
     public Date getCreated() {

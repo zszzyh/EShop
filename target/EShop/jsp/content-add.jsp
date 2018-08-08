@@ -4,7 +4,7 @@
 <script type="text/javascript" charset="utf-8" src="/js/kindeditor-4.1.10/lang/zh_CN.js"></script>
 <div style="padding:10px 10px 10px 10px">
 	<form id="contentAddForm" class="itemForm" method="post">
-		<input type="hidden" name="categoryId"/>
+		<input type="hidden" name="category_id"/>
 	    <table cellpadding="5">
 	        <tr>
 	            <td>内容标题:</td>
@@ -16,7 +16,7 @@
 	        </tr>
 	        <tr>
 	            <td>内容描述:</td>
-	            <td><input class="easyui-textbox" name="titleDesc" data-options="multiline:true,validType:'length[0,150]'" style="height:60px;width: 280px;"></input>
+	            <td><input class="easyui-textbox" name="title_desc" data-options="multiline:true,validType:'length[0,150]'" style="height:60px;width: 280px;"></input>
 	            </td>
 	        </tr>
 	         <tr>
@@ -55,7 +55,7 @@
 	$(function(){
 		contentAddEditor = TT.createEditor("#contentAddForm [name=content]");
 		TT.initOnePicUpload();
-		$("#contentAddForm [name=categoryId]").val($("#contentCategoryTree").tree("getSelected").id);
+		$("#contentAddForm [name=category_id]").val($("#contentCategoryTree").tree("getSelected").id);
 	});
 	
 	var contentAddPage  = {

@@ -27,7 +27,7 @@ $(function(){
         	var _tree = $(this);
         	if(node.id == 0){
         		// 新增节点
-        		$.post("/content/category/create",{parentId:node.parentId,name:node.text},function(data){
+        		$.post("/content/category/create",{parent_id:node.parent_id,name:node.text},function(data){
         			if(data.status == 200){
         				_tree.tree("update",{
             				target : node.target,
@@ -52,7 +52,7 @@ function menuHandler(item){
             data: [{
                 text: '新建分类',
                 id : 0,
-                parentId : node.id
+                parent_id : node.id
             }]
         }); 
 		var _node = tree.tree('find',0);
@@ -62,7 +62,7 @@ function menuHandler(item){
 	}else if(item.name === "delete"){
 		$.messager.confirm('确认','确定删除名为 '+node.text+' 的分类吗？',function(r){
 			if(r){
-				$.post("/content/category/delete/",{parentId:node.parentId,id:node.id},function(){
+				$.post("/content/category/delete/",{parent_id:node.parent_id,id:node.id},function(){
 					tree.tree("remove",node.target);
 				});	
 			}

@@ -5,13 +5,13 @@ import java.util.Date;
 public class Tb_Content {
     private Long id;
 
-    private Long categoryId;
+    private Long category_id;
 
     private String title;
 
     private String subTitle;
 
-    private String titleDesc;
+    private String title_desc;
 
     private String url;
 
@@ -25,12 +25,12 @@ public class Tb_Content {
 
     private String content;
 
-    public Tb_Content(Long id, Long categoryId, String title, String subTitle, String titleDesc, String url, String pic, String pic2, Date created, Date updated, String content) {
+    public Tb_Content(Long id, Long category_id, String title, String subTitle, String title_desc, String url, String pic, String pic2, Date created, Date updated, String content) {
         this.id = id;
-        this.categoryId = categoryId;
+        this.category_id = category_id;
         this.title = title;
         this.subTitle = subTitle;
-        this.titleDesc = titleDesc;
+        this.title_desc = title_desc;
         this.url = url;
         this.pic = pic;
         this.pic2 = pic2;
@@ -51,12 +51,12 @@ public class Tb_Content {
         this.id = id;
     }
 
-    public Long getCategoryId() {
-        return categoryId;
+    public Long getCategory_id() {
+        return category_id;
     }
 
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
+    public void setCategory_id(Long category_id) {
+        this.category_id = category_id;
     }
 
     public String getTitle() {
@@ -75,12 +75,12 @@ public class Tb_Content {
         this.subTitle = subTitle == null ? null : subTitle.trim();
     }
 
-    public String getTitleDesc() {
-        return titleDesc;
+    public String getTitle_desc() {
+        return title_desc;
     }
 
-    public void setTitleDesc(String titleDesc) {
-        this.titleDesc = titleDesc == null ? null : titleDesc.trim();
+    public void setTitle_desc(String title_desc) {
+        this.title_desc = title_desc == null ? null : title_desc.trim();
     }
 
     public String getUrl() {

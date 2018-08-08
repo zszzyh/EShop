@@ -30,6 +30,7 @@ public class Tb_Admin_InfoSerivceImpl implements Tb_Admin_InfoSerivce {
     @Override
     public Boolean login(String admin_code,String password) {
         List list =  mapper.findAdmin(admin_code, password);
+        System.out.println(list);
         if (list.size()>0){
             return true;
         }else {

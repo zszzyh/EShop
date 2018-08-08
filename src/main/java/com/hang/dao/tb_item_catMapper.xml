@@ -30,8 +30,8 @@
     insert into tb_item_cat (id, parent_id, name, 
       status, sort_order, is_parent, 
       created, updated)
-    values (#{id,jdbcType=BIGINT}, #{parentId,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, 
-      #{status,jdbcType=INTEGER}, #{sortOrder,jdbcType=INTEGER}, #{isParent,jdbcType=BIT}, 
+    values (#{id,jdbcType=BIGINT}, #{parent_id,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR},
+      #{status,jdbcType=INTEGER}, #{sort_order,jdbcType=INTEGER}, #{is_parent,jdbcType=BIT},
       #{created,jdbcType=TIMESTAMP}, #{updated,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="com.hang.bean.Tb_Item_Cat" >
@@ -40,7 +40,7 @@
       <if test="id != null" >
         id,
       </if>
-      <if test="parentId != null" >
+      <if test="parent_id != null" >
         parent_id,
       </if>
       <if test="name != null" >
@@ -49,10 +49,10 @@
       <if test="status != null" >
         status,
       </if>
-      <if test="sortOrder != null" >
+      <if test="sort_order != null" >
         sort_order,
       </if>
-      <if test="isParent != null" >
+      <if test="is_parent != null" >
         is_parent,
       </if>
       <if test="created != null" >
@@ -66,8 +66,8 @@
       <if test="id != null" >
         #{id,jdbcType=BIGINT},
       </if>
-      <if test="parentId != null" >
-        #{parentId,jdbcType=BIGINT},
+      <if test="parent_id != null" >
+        #{parent_id,jdbcType=BIGINT},
       </if>
       <if test="name != null" >
         #{name,jdbcType=VARCHAR},
@@ -75,11 +75,11 @@
       <if test="status != null" >
         #{status,jdbcType=INTEGER},
       </if>
-      <if test="sortOrder != null" >
-        #{sortOrder,jdbcType=INTEGER},
+      <if test="sort_order != null" >
+        #{sort_order,jdbcType=INTEGER},
       </if>
-      <if test="isParent != null" >
-        #{isParent,jdbcType=BIT},
+      <if test="is_parent != null" >
+        #{is_parent,jdbcType=BIT},
       </if>
       <if test="created != null" >
         #{created,jdbcType=TIMESTAMP},
@@ -92,8 +92,8 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.hang.bean.Tb_Item_Cat" >
     update tb_item_cat
     <set >
-      <if test="parentId != null" >
-        parent_id = #{parentId,jdbcType=BIGINT},
+      <if test="parent_id != null" >
+        parent_id = #{parent_id,jdbcType=BIGINT},
       </if>
       <if test="name != null" >
         name = #{name,jdbcType=VARCHAR},
@@ -101,11 +101,11 @@
       <if test="status != null" >
         status = #{status,jdbcType=INTEGER},
       </if>
-      <if test="sortOrder != null" >
-        sort_order = #{sortOrder,jdbcType=INTEGER},
+      <if test="sort_order != null" >
+        sort_order = #{sort_order,jdbcType=INTEGER},
       </if>
-      <if test="isParent != null" >
-        is_parent = #{isParent,jdbcType=BIT},
+      <if test="is_parent != null" >
+        is_parent = #{is_parent,jdbcType=BIT},
       </if>
       <if test="created != null" >
         created = #{created,jdbcType=TIMESTAMP},
@@ -118,13 +118,18 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.hang.bean.Tb_Item_Cat" >
     update tb_item_cat
-    set parent_id = #{parentId,jdbcType=BIGINT},
+    set parent_id = #{parent_id,jdbcType=BIGINT},
       name = #{name,jdbcType=VARCHAR},
       status = #{status,jdbcType=INTEGER},
-      sort_order = #{sortOrder,jdbcType=INTEGER},
-      is_parent = #{isParent,jdbcType=BIT},
+      sort_order = #{sort_order,jdbcType=INTEGER},
+      is_parent = #{is_parent,jdbcType=BIT},
       created = #{created,jdbcType=TIMESTAMP},
       updated = #{updated,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
+
+
+  <select id="findAll" parameterType="String" resultType="com.hang.bean.Tb_Item_Cat">
+    select  * from tb_item_cat where parent_id = #{parent_id}
+  </select>
 </mapper>

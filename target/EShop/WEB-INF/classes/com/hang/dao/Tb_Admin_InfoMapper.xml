@@ -19,27 +19,27 @@
     select 
     <include refid="Base_Column_List" />
     from tb_admin_info
-    where admin_id = #{adminId,jdbcType=INTEGER}
+    where admin_id = #{admin_id,jdbcType=INTEGER}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from tb_admin_info
-    where admin_id = #{adminId,jdbcType=INTEGER}
+    where admin_id = #{admin_id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.hang.bean.Tb_Admin_Info" >
     insert into tb_admin_info (admin_id, admin_code, password, 
       name, telephone, email, 
       enrolldate)
-    values (#{adminId,jdbcType=INTEGER}, #{adminCode,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
+    values (#{admin_id,jdbcType=INTEGER}, #{admin_code,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
       #{name,jdbcType=VARCHAR}, #{telephone,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, 
       #{enrolldate,jdbcType=DATE})
   </insert>
   <insert id="insertSelective" parameterType="com.hang.bean.Tb_Admin_Info" >
     insert into tb_admin_info
     <trim prefix="(" suffix=")" suffixOverrides="," >
-      <if test="adminId != null" >
+      <if test="admin_id != null" >
         admin_id,
       </if>
-      <if test="adminCode != null" >
+      <if test="admin_code != null" >
         admin_code,
       </if>
       <if test="password != null" >
@@ -59,11 +59,11 @@
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
-      <if test="adminId != null" >
-        #{adminId,jdbcType=INTEGER},
+      <if test="admin_id != null" >
+        #{admin_id,jdbcType=INTEGER},
       </if>
-      <if test="adminCode != null" >
-        #{adminCode,jdbcType=VARCHAR},
+      <if test="admin_code != null" >
+        #{admin_code,jdbcType=VARCHAR},
       </if>
       <if test="password != null" >
         #{password,jdbcType=VARCHAR},
@@ -85,8 +85,8 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.hang.bean.Tb_Admin_Info" >
     update tb_admin_info
     <set >
-      <if test="adminCode != null" >
-        admin_code = #{adminCode,jdbcType=VARCHAR},
+      <if test="admin_code != null" >
+        admin_code = #{admin_code,jdbcType=VARCHAR},
       </if>
       <if test="password != null" >
         password = #{password,jdbcType=VARCHAR},
@@ -104,17 +104,17 @@
         enrolldate = #{enrolldate,jdbcType=DATE},
       </if>
     </set>
-    where admin_id = #{adminId,jdbcType=INTEGER}
+    where admin_id = #{admin_id,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.hang.bean.Tb_Admin_Info" >
     update tb_admin_info
-    set admin_code = #{adminCode,jdbcType=VARCHAR},
+    set admin_code = #{admin_code,jdbcType=VARCHAR},
       password = #{password,jdbcType=VARCHAR},
       name = #{name,jdbcType=VARCHAR},
       telephone = #{telephone,jdbcType=VARCHAR},
       email = #{email,jdbcType=VARCHAR},
       enrolldate = #{enrolldate,jdbcType=DATE}
-    where admin_id = #{adminId,jdbcType=INTEGER}
+    where admin_id = #{admin_id,jdbcType=INTEGER}
   </update>
 
 

@@ -4,7 +4,7 @@
 <script type="text/javascript" charset="utf-8" src="/js/kindeditor-4.1.10/lang/zh_CN.js"></script>
 <div style="padding:10px 10px 10px 10px">
 	<form id="contentEditForm" class="itemForm" method="post">
-		<input type="hidden" name="categoryId"/>
+		<input type="hidden" name="category_id"/>
 		<input type="hidden" name="id"/>
 	    <table cellpadding="5">
 	        <tr>
@@ -17,7 +17,7 @@
 	        </tr>
 	        <tr>
 	            <td>内容描述:</td>
-	            <td><input class="easyui-textbox" name="titleDesc" data-options="multiline:true,validType:'length[0,150]'" style="height:60px;width: 280px;"></input>
+	            <td><input class="easyui-textbox" name="title_desc" data-options="multiline:true,validType:'length[0,150]'" style="height:60px;width: 280px;"></input>
 	            </td>
 	        </tr>
 	         <tr>

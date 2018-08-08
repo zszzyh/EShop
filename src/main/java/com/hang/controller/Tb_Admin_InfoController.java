@@ -37,7 +37,7 @@ public class Tb_Admin_InfoController {
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     @ResponseBody
     public Map<String,Object> login(HttpSession session, @RequestBody Tb_Admin_Info tb_admin_info) {
-        boolean flag = service.login(tb_admin_info.getAdminCode(), MD5.getMD5(tb_admin_info.getPassword()));
+        boolean flag = service.login(tb_admin_info.getAdmin_code(), MD5.getMD5(tb_admin_info.getPassword()));
         String msg = "";
         Map<String,Object> map = new HashMap<>();
         if (flag) {

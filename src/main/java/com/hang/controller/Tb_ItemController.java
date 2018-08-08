@@ -38,13 +38,12 @@ public class Tb_ItemController {
 
    @RequestMapping(value = "/findAll",method = RequestMethod.GET)
    @ResponseBody
-   public BaseEasyBean findAll(){
+   public BaseEasyBean findAll(String page, String rows){
        BaseEasyBean baseEasyBean = new BaseEasyBean();
-       List<Tb_Item> tList = service.findAll();
-       int total = tList.size();
+       List<Tb_Item> tList = service.findAll(page,rows);
+       int total = service.countItem();
        baseEasyBean.setRows(tList);
        baseEasyBean.setTotal(total);
-       System.out.println(baseEasyBean);
        return baseEasyBean;
    }
 }

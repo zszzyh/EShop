@@ -4,9 +4,9 @@ import java.util.Date;
 
 public class Tb_Admin_Info {
 
-    private Integer adminId;
+    private Integer admin_id;
 
-    private String adminCode;
+    private String admin_code;
 
     private String password;
 
@@ -21,8 +21,8 @@ public class Tb_Admin_Info {
     @Override
     public String toString() {
         return "Tb_Admin_Info{" +
-                "adminId=" + adminId +
-                ", adminCode='" + adminCode + '\'' +
+                "admin_id=" + admin_id +
+                ", admin_code='" + admin_code + '\'' +
                 ", password='" + password + '\'' +
                 ", name='" + name + '\'' +
                 ", telephone='" + telephone + '\'' +
@@ -31,9 +31,9 @@ public class Tb_Admin_Info {
                 '}';
     }
 
-    public Tb_Admin_Info(Integer adminId, String adminCode, String password, String name, String telephone, String email, Date enrolldate) {
-        this.adminId = adminId;
-        this.adminCode = adminCode;
+    public Tb_Admin_Info(Integer admin_id, String admin_code, String password, String name, String telephone, String email, Date enrolldate) {
+        this.admin_id = admin_id;
+        this.admin_code = admin_code;
         this.password = password;
         this.name = name;
         this.telephone = telephone;
@@ -45,20 +45,20 @@ public class Tb_Admin_Info {
         super();
     }
 
-    public Integer getAdminId() {
-        return adminId;
+    public Integer getAdmin_id() {
+        return admin_id;
     }
 
-    public void setAdminId(Integer adminId) {
-        this.adminId = adminId;
+    public void setAdmin_id(Integer admin_id) {
+        this.admin_id = admin_id;
     }
 
-    public String getAdminCode() {
-        return adminCode;
+    public String getAdmin_code() {
+        return admin_code;
     }
 
-    public void setAdminCode(String adminCode) {
-        this.adminCode = adminCode == null ? null : adminCode.trim();
+    public void setAdmin_code(String admin_code) {
+        this.admin_code = admin_code == null ? null : admin_code.trim();
     }
 
     public String getPassword() {
