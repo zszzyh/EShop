@@ -2,6 +2,7 @@ package com.hang.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import com.google.gson.Gson;
+import com.hang.common.pojo.UpLoadFileResult;
 import com.hang.utils.ResponseUtils;
 import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientHandlerException;
@@ -40,10 +41,11 @@ import java.util.Random;
 @Controller
 public class PictureController {
     @RequestMapping("/pic/upload")
-//    @ResponseBody
-    public void uploadBrandPic(@RequestParam(required = false) MultipartFile pic, HttpServletResponse response) {
+    @ResponseBody
+    public UpLoadFileResult uploadBrandPic(@RequestParam(required = false) MultipartFile pic, HttpServletResponse response) {
         //图片名称生成策略---采用时间格式(精确到毫秒)并追加随机3位(10以内)数字
         //精确到毫秒
+        UpLoadFileResult result = new UpLoadFileResult();
         DateFormat df = new SimpleDateFormat("yyyyMMddHHmmssSSS");
         String picName = df.format(new Date());
         //随机再生成3位 10以内的数
@@ -63,25 +65,33 @@ public class PictureController {
         WebResource resource = client.resource(url);
         try {
             resource.put(String.class, pic.getBytes());
+            result.setError(0);
+            result.setUrl(url);
+            result.setMessage("上传图片成功");
         } catch (UniformInterfaceException e1) {
             // TODO Auto-generated catch block
             e1.printStackTrace();
         } catch (ClientHandlerException e1) {
             // TODO Auto-generated catch block
+            result.setError(1);
+            result.setMessage("上传图片失败");
             e1.printStackTrace();
         } catch (IOException e1) {
             // TODO Auto-generated catch block
             e1.printStackTrace();
         }
+        return result;
+
 //        Gson gson = new Gson();
-        Map map = new HashMap();
-        map.put("url", url);
-        map.put("path", path);
+
+//        Map map = new HashMap();
+//        map.put("url", url);
+//        map.put("path", path);
 
 //        JSONObject json = new JSONObject();
 //        json.put("url", url);
 //        json.put("path", path);
-        ResponseUtils.renderJson(response, map.toString());
+//        ResponseUtils.renderJson(response, map.toString());
     }
 }
 
