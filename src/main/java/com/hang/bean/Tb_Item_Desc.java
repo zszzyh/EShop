@@ -3,31 +3,31 @@ package com.hang.bean;
 import java.util.Date;
 
 public class Tb_Item_Desc {
-    private Long itemId;
+    private Long item_id;
 
     private Date created;
 
     private Date updated;
 
-    private String itemDesc;
+    private String item_desc;
 
-    public Tb_Item_Desc(Long itemId, Date created, Date updated, String itemDesc) {
-        this.itemId = itemId;
+    public Tb_Item_Desc(Long item_id, Date created, Date updated, String item_desc) {
+        this.item_id = item_id;
         this.created = created;
         this.updated = updated;
-        this.itemDesc = itemDesc;
+        this.item_desc = item_desc;
     }
 
     public Tb_Item_Desc() {
         super();
     }
 
-    public Long getItemId() {
-        return itemId;
+    public Long getItem_id() {
+        return item_id;
     }
 
-    public void setItemId(Long itemId) {
-        this.itemId = itemId;
+    public void setItem_id(Long item_id) {
+        this.item_id = item_id;
     }
 
     public Date getCreated() {
@@ -46,11 +46,11 @@ public class Tb_Item_Desc {
         this.updated = updated;
     }
 
-    public String getItemDesc() {
-        return itemDesc;
+    public String getItem_desc() {
+        return item_desc;
     }
 
-    public void setItemDesc(String itemDesc) {
-        this.itemDesc = itemDesc == null ? null : itemDesc.trim();
+    public void setItem_desc(String item_desc) {
+        this.item_desc = item_desc == null ? null : item_desc.trim();
     }
 }

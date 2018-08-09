@@ -57,14 +57,19 @@ public class PictureController {
         String originalFilename = pic.getOriginalFilename();
         String ext = FilenameUtils.getExtension(originalFilename);
         //相对路径
-        String path = "upload/" + picName + "." + ext;
+        String path =  picName + "." + ext;
         //全路径，该路径为后面创建的tomcat图片服务器的上传图片的web工程下存放图片的路径
-        String url = "http://172.16.16.87:8080/ImageWeb/" + path;
+        String url = "http://172.16.17.6:8080/ImageWeb/" + path;
         //jersey 发送另一台Tomcat(可读写的)
+
         Client client = new Client();
-        WebResource resource = client.resource(url);
         try {
-            resource.put(String.class, pic.getBytes());
+//            for (int i = 0; i < 1000; i++) {
+//                url="http://172.16.17.6:8080/ImageWeb/upload/" +i+ path;
+                WebResource resource = client.resource(url);
+                resource.put(String.class, pic.getBytes());
+//            }
+
             result.setError(0);
             result.setUrl(url);
             result.setMessage("上传图片成功");

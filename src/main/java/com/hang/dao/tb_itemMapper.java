@@ -22,5 +22,6 @@ public interface Tb_ItemMapper {
     //查tb_item表全部数据
     List<Tb_Item> findAll();
 
-
+    //提交表单 向 tb_item添加数据
+    void insertTb_Item(Tb_Item tb_item);
 }

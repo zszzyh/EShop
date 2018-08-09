@@ -34,7 +34,7 @@
       price, num, barcode, 
       image, cid, status, 
       created, updated)
-    values (#{id,jdbcType=BIGINT}, #{title,jdbcType=VARCHAR}, #{sellPoint,jdbcType=VARCHAR}, 
+    values (#{id,jdbcType=BIGINT}, #{title,jdbcType=VARCHAR}, #{sell_point,jdbcType=VARCHAR},
       #{price,jdbcType=BIGINT}, #{num,jdbcType=INTEGER}, #{barcode,jdbcType=VARCHAR}, 
       #{image,jdbcType=VARCHAR}, #{cid,jdbcType=BIGINT}, #{status,jdbcType=TINYINT}, 
       #{created,jdbcType=TIMESTAMP}, #{updated,jdbcType=TIMESTAMP})
@@ -48,7 +48,7 @@
       <if test="title != null" >
         title,
       </if>
-      <if test="sellPoint != null" >
+      <if test="sell_point != null" >
         sell_point,
       </if>
       <if test="price != null" >
@@ -83,8 +83,8 @@
       <if test="title != null" >
         #{title,jdbcType=VARCHAR},
       </if>
-      <if test="sellPoint != null" >
-        #{sellPoint,jdbcType=VARCHAR},
+      <if test="sell_point != null" >
+        #{sell_point,jdbcType=VARCHAR},
       </if>
       <if test="price != null" >
         #{price,jdbcType=BIGINT},
@@ -118,8 +118,8 @@
       <if test="title != null" >
         title = #{title,jdbcType=VARCHAR},
       </if>
-      <if test="sellPoint != null" >
-        sell_point = #{sellPoint,jdbcType=VARCHAR},
+      <if test="sell_point != null" >
+        sell_point = #{sell_point,jdbcType=VARCHAR},
       </if>
       <if test="price != null" >
         price = #{price,jdbcType=BIGINT},
@@ -151,7 +151,7 @@
   <update id="updateByPrimaryKey" parameterType="com.hang.bean.Tb_Item" >
     update tb_item
     set title = #{title,jdbcType=VARCHAR},
-      sell_point = #{sellPoint,jdbcType=VARCHAR},
+      sell_point = #{sell_point,jdbcType=VARCHAR},
       price = #{price,jdbcType=BIGINT},
       num = #{num,jdbcType=INTEGER},
       barcode = #{barcode,jdbcType=VARCHAR},
@@ -168,4 +168,11 @@
   <select id="findAll"  resultType="com.hang.bean.Tb_Item">
     select * from tb_item
   </select>
+
+
+  <insert id="insertTb_Item" parameterType="com.hang.bean.Tb_Item">
+    insert into tb_item (id,title,sell_point,price,num,barcode,image,cid,status,created,updated)
+    values (#{id},#{title},
+    #{sell_point},#{price},#{num},#{barcode},#{image},#{cid},#{status},#{created},#{updated})
+  </insert>
 </mapper>

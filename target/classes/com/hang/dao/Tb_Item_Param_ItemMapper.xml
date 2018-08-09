@@ -39,7 +39,7 @@
   <insert id="insert" parameterType="com.hang.bean.Tb_Item_Param_Item" >
     insert into tb_item_param_item (id, item_id, created, 
       updated, param_data)
-    values (#{id,jdbcType=BIGINT}, #{itemId,jdbcType=BIGINT}, #{created,jdbcType=TIMESTAMP}, 
+    values (#{id,jdbcType=BIGINT}, #{item_id,jdbcType=BIGINT}, #{created,jdbcType=TIMESTAMP},
       #{updated,jdbcType=TIMESTAMP}, #{paramData,jdbcType=LONGVARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.hang.bean.Tb_Item_Param_Item" >
@@ -48,7 +48,7 @@
       <if test="id != null" >
         id,
       </if>
-      <if test="itemId != null" >
+      <if test="item_id != null" >
         item_id,
       </if>
       <if test="created != null" >
@@ -65,8 +65,8 @@
       <if test="id != null" >
         #{id,jdbcType=BIGINT},
       </if>
-      <if test="itemId != null" >
-        #{itemId,jdbcType=BIGINT},
+      <if test="item_id != null" >
+        #{item_id,jdbcType=BIGINT},
       </if>
       <if test="created != null" >
         #{created,jdbcType=TIMESTAMP},
@@ -82,8 +82,8 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.hang.bean.Tb_Item_Param_Item" >
     update tb_item_param_item
     <set >
-      <if test="itemId != null" >
-        item_id = #{itemId,jdbcType=BIGINT},
+      <if test="item_id != null" >
+        item_id = #{item_id,jdbcType=BIGINT},
       </if>
       <if test="created != null" >
         created = #{created,jdbcType=TIMESTAMP},
@@ -99,7 +99,7 @@
   </update>
   <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.hang.bean.Tb_Item_Param_Item" >
     update tb_item_param_item
-    set item_id = #{itemId,jdbcType=BIGINT},
+    set item_id = #{item_id,jdbcType=BIGINT},
       created = #{created,jdbcType=TIMESTAMP},
       updated = #{updated,jdbcType=TIMESTAMP},
       param_data = #{paramData,jdbcType=LONGVARCHAR}
@@ -107,7 +107,7 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.hang.bean.Tb_Item_Param_Item" >
     update tb_item_param_item
-    set item_id = #{itemId,jdbcType=BIGINT},
+    set item_id = #{item_id,jdbcType=BIGINT},
       created = #{created,jdbcType=TIMESTAMP},
       updated = #{updated,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}

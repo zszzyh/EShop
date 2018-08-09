@@ -30,7 +30,7 @@
     insert into tb_order_item (id, item_id, order_id, 
       num, title, price, total_fee, 
       pic_path)
-    values (#{id,jdbcType=VARCHAR}, #{itemId,jdbcType=VARCHAR}, #{orderId,jdbcType=VARCHAR}, 
+    values (#{id,jdbcType=VARCHAR}, #{item_id,jdbcType=VARCHAR}, #{orderId,jdbcType=VARCHAR},
       #{num,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, #{price,jdbcType=BIGINT}, #{totalFee,jdbcType=BIGINT}, 
       #{picPath,jdbcType=VARCHAR})
   </insert>
@@ -40,7 +40,7 @@
       <if test="id != null" >
         id,
       </if>
-      <if test="itemId != null" >
+      <if test="item_id != null" >
         item_id,
       </if>
       <if test="orderId != null" >
@@ -66,8 +66,8 @@
       <if test="id != null" >
         #{id,jdbcType=VARCHAR},
       </if>
-      <if test="itemId != null" >
-        #{itemId,jdbcType=VARCHAR},
+      <if test="item_id != null" >
+        #{item_id,jdbcType=VARCHAR},
       </if>
       <if test="orderId != null" >
         #{orderId,jdbcType=VARCHAR},
@@ -92,8 +92,8 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.hang.bean.Tb_Order_Item" >
     update tb_order_item
     <set >
-      <if test="itemId != null" >
-        item_id = #{itemId,jdbcType=VARCHAR},
+      <if test="item_id != null" >
+        item_id = #{item_id,jdbcType=VARCHAR},
       </if>
       <if test="orderId != null" >
         order_id = #{orderId,jdbcType=VARCHAR},
@@ -118,7 +118,7 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.hang.bean.Tb_Order_Item" >
     update tb_order_item
-    set item_id = #{itemId,jdbcType=VARCHAR},
+    set item_id = #{item_id,jdbcType=VARCHAR},
       order_id = #{orderId,jdbcType=VARCHAR},
       num = #{num,jdbcType=INTEGER},
       title = #{title,jdbcType=VARCHAR},

@@ -28,22 +28,22 @@
     ,
     <include refid="Blob_Column_List" />
     from tb_item_desc
-    where item_id = #{itemId,jdbcType=BIGINT}
+    where item_id = #{item_id,jdbcType=BIGINT}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
     delete from tb_item_desc
-    where item_id = #{itemId,jdbcType=BIGINT}
+    where item_id = #{item_id,jdbcType=BIGINT}
   </delete>
   <insert id="insert" parameterType="com.hang.bean.Tb_Item_Desc" >
     insert into tb_item_desc (item_id, created, updated, 
       item_desc)
-    values (#{itemId,jdbcType=BIGINT}, #{created,jdbcType=TIMESTAMP}, #{updated,jdbcType=TIMESTAMP}, 
-      #{itemDesc,jdbcType=LONGVARCHAR})
+    values (#{item_id,jdbcType=BIGINT}, #{created,jdbcType=TIMESTAMP}, #{updated,jdbcType=TIMESTAMP},
+      #{item_desc,jdbcType=LONGVARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.hang.bean.Tb_Item_Desc" >
     insert into tb_item_desc
     <trim prefix="(" suffix=")" suffixOverrides="," >
-      <if test="itemId != null" >
+      <if test="item_id != null" >
         item_id,
       </if>
       <if test="created != null" >
@@ -52,13 +52,13 @@
       <if test="updated != null" >
         updated,
       </if>
-      <if test="itemDesc != null" >
+      <if test="item_desc != null" >
         item_desc,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
-      <if test="itemId != null" >
-        #{itemId,jdbcType=BIGINT},
+      <if test="item_id != null" >
+        #{item_id,jdbcType=BIGINT},
       </if>
       <if test="created != null" >
         #{created,jdbcType=TIMESTAMP},
@@ -66,8 +66,8 @@
       <if test="updated != null" >
         #{updated,jdbcType=TIMESTAMP},
       </if>
-      <if test="itemDesc != null" >
-        #{itemDesc,jdbcType=LONGVARCHAR},
+      <if test="item_desc != null" >
+        #{item_desc,jdbcType=LONGVARCHAR},
       </if>
     </trim>
   </insert>
@@ -80,23 +80,28 @@
       <if test="updated != null" >
         updated = #{updated,jdbcType=TIMESTAMP},
       </if>
-      <if test="itemDesc != null" >
-        item_desc = #{itemDesc,jdbcType=LONGVARCHAR},
+      <if test="item_desc != null" >
+        item_desc = #{item_desc,jdbcType=LONGVARCHAR},
       </if>
     </set>
-    where item_id = #{itemId,jdbcType=BIGINT}
+    where item_id = #{item_id,jdbcType=BIGINT}
   </update>
   <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.hang.bean.Tb_Item_Desc" >
     update tb_item_desc
     set created = #{created,jdbcType=TIMESTAMP},
       updated = #{updated,jdbcType=TIMESTAMP},
-      item_desc = #{itemDesc,jdbcType=LONGVARCHAR}
-    where item_id = #{itemId,jdbcType=BIGINT}
+      item_desc = #{item_desc,jdbcType=LONGVARCHAR}
+    where item_id = #{item_id,jdbcType=BIGINT}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.hang.bean.Tb_Item_Desc" >
     update tb_item_desc
     set created = #{created,jdbcType=TIMESTAMP},
       updated = #{updated,jdbcType=TIMESTAMP}
-    where item_id = #{itemId,jdbcType=BIGINT}
+    where item_id = #{item_id,jdbcType=BIGINT}
   </update>
+
+
+  <insert id="insertTb_Item_Desc" parameterType="com.hang.bean.Tb_Item_Desc">
+    insert into tb_item_desc values (#{item_id},#{item_desc},#{created},#{updated})
+  </insert>
 </mapper>

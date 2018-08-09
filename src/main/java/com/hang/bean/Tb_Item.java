@@ -7,7 +7,7 @@ public class Tb_Item {
 
     private String title;
 
-    private String sellPoint;
+    private String sell_point;
 
     private Long price;
 
@@ -25,10 +25,10 @@ public class Tb_Item {
 
     private Date updated;
 
-    public Tb_Item(Long id, String title, String sellPoint, Long price, Integer num, String barcode, String image, Long cid, Byte status, Date created, Date updated) {
+    public Tb_Item(Long id, String title, String sell_point, Long price, Integer num, String barcode, String image, Long cid, Byte status, Date created, Date updated) {
         this.id = id;
         this.title = title;
-        this.sellPoint = sellPoint;
+        this.sell_point = sell_point;
         this.price = price;
         this.num = num;
         this.barcode = barcode;
@@ -59,12 +59,12 @@ public class Tb_Item {
         this.title = title == null ? null : title.trim();
     }
 
-    public String getSellPoint() {
-        return sellPoint;
+    public String getSell_point() {
+        return sell_point;
     }
 
-    public void setSellPoint(String sellPoint) {
-        this.sellPoint = sellPoint == null ? null : sellPoint.trim();
+    public void setSell_point(String sell_point) {
+        this.sell_point = sell_point == null ? null : sell_point.trim();
     }
 
     public Long getPrice() {

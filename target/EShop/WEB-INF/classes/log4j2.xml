@@ -42,7 +42,7 @@
         <logger name="org.springframework.test.context.junit4.SpringJUnit4ClassRunner" level="info">
         </logger>
         <!-- 下面的logger需要修改为你的项目根路径，如com.sd -->
-        <logger name="com.hang" level="debug" includeLocation="true" additivity="false">
+        <logger name="com.hang" level="info" includeLocation="true" additivity="false">
             <appender-ref ref="ErrorLog"/>
             <appender-ref ref="Console"/>
         </logger>
